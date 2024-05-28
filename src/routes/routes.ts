@@ -1,11 +1,10 @@
 import ClientLayout from "../layouts/ClientLayout";
-import CatalogPage from "../pages/CatalogPage";
-import CreatePage from "../pages/CreatePage";
-import EditPage from "../pages/EditPage";
+import ProjectPage from "../pages/ProjectPage";
+import BlogPage from "../pages/BlogPage";
+import ContactPage from "../pages/ContactPage";
 import HomePage from "../pages/HomePage";
-import LoginPage from "../pages/LoginPage";
-import ShowPage from "../pages/ShowPage";
-
+import ServicesPage from "../pages/ServicesPage";
+import CustomerPage from "../pages/CustomerPage";
 
 const routes = [
     {
@@ -14,34 +13,29 @@ const routes = [
         page: HomePage,
     },
     {
-        path: '/login',
+        path: '/servicios/:param?',
         layout: ClientLayout,
-        page: LoginPage,
+        page: ServicesPage,
     },
     {
-        path: '/catalog',
+        path: '/proyectos/:param?',
         layout: ClientLayout,
-        page: CatalogPage,
+        page: ProjectPage,
     },
     {
-        path: '/catalog/show/:id',
+        path: '/clientes/:param?',
         layout: ClientLayout,
-        page: ShowPage,
+        page: CustomerPage,
     },
     {
-        path: '/catalog/create',
+        path: '/blog/:param?',
         layout: ClientLayout,
-        page: CreatePage,
+        page: BlogPage,
     },
     {
-        path: '/catalog/edit/:id',
+        path: '/contacto',
         layout: ClientLayout,
-        page: EditPage,
-    },
-    {
-        path: '/logout',
-        layout: ClientLayout,
-        page: "logout",
+        page: ContactPage,
     },
 ];
 
