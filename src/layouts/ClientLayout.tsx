@@ -10,7 +10,7 @@ const ClientLayout: React.FC<ClientLayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow max-w-xl mx-auto flex items-center justify-center">
+      <main className="flex-grow max-w-xl flex mt-20 justify-center">
         {children}
       </main>
       <Footer />

@@ -5,6 +5,7 @@ import ContactPage from "../pages/ContactPage";
 import HomePage from "../pages/HomePage";
 import ServicesPage from "../pages/ServicesPage";
 import CustomerPage from "../pages/CustomerPage";
+import ServiceDetailPage from "../pages/ServicesPageDetail";
 
 const routes = [
     {
@@ -13,9 +14,14 @@ const routes = [
         page: HomePage,
     },
     {
-        path: '/servicios/:param?',
+        path: '/servicios',
         layout: ClientLayout,
         page: ServicesPage,
+    },
+    {
+        path: '/servicios/:id?',
+        layout: ClientLayout,
+        page: ServiceDetailPage,
     },
     {
         path: '/proyectos/:param?',
