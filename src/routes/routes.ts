@@ -14,22 +14,22 @@ const routes = [
         page: HomePage,
     },
     {
-        path: '/servicios',
+        path: '/talleres',
         layout: ClientLayout,
         page: ServicesPage,
     },
     {
-        path: '/servicios/:id?',
+        path: '/talleres/:id',
         layout: ClientLayout,
         page: ServiceDetailPage,
     },
     {
-        path: '/proyectos/:param?',
+        path: '/programas/:param?',
         layout: ClientLayout,
         page: ProjectPage,
     },
     {
-        path: '/clientes/:param?',
+        path: '/asesoramiento/:param?',
         layout: ClientLayout,
         page: CustomerPage,
     },

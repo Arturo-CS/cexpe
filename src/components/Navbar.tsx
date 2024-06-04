@@ -11,12 +11,11 @@ function Navbar() {
   };
 
   const navigation = [
-    { title: 'Home', path: '/' },
-    { title: 'Servicios', path: '/servicios' },
-    { title: 'Proyectos', path: '/proyectos' },
-    { title: 'Clientes', path: '/clientes' },
-    { title: 'Blog', path: '/blog' },
-    { title: 'Contacto', path: '/contacto' }
+    { title: "Inicio", path: "/" },
+    { title: "Talleres", path: "/talleres" },
+    { title: "Programas", path: "/programas" },
+    { title: "Asesoramiento", path: "/asesoramiento" },
+    { title: "Contacto", path: "/contacto" },
   ];
 
   return (
